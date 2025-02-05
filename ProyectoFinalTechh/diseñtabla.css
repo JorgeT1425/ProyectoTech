@@ -76,6 +76,20 @@ button:hover {
     background-color: #BBDEFB; /* Azul más oscuro */
     transition: 0.3s ease;
 }
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background: #27b077;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #1a874e;
+}
 
 /* Última fila */
 #tablaUsuarios tbody tr:last-of-type {

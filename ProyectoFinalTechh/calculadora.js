@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return CTotal;
         }
         valor = calcular(cantidad);
-        rC.textContent = `El porcentaje total de energia eolica usada es:  ${valor}%`;
+        rC.textContent = `El porcentaje total de energía eólica usada es:  ${valor}%`;
 
     });
 });

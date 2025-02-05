@@ -1,0 +1,52 @@
+body{
+    background-color:skyblue
+}
+#tablaUsuarios{
+    margin-left: auto; 
+    margin-right: auto; 
+    width: fit-content;
+}
+#tablaUsuarios {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px rgba(233, 227, 227, 0.979);
+}
+#tablaUsuarios thead tr {
+    background-color: #ece7e7;
+    color: black;
+    text-align: left;
+}
+
+#tablaUsuarios th, #tablaUsuarios td {
+    border: 1px solid #e7e1e1cb;
+    padding: 12px 15px;
+}
+
+#tablaUsuarios tbody tr {
+    border-bottom: 1px solid #ebe7e7f3;
+}
+
+#tablaUsuarios tbody tr:nth-of-type(even) {
+    background-color: #e4dcdc;
+}
+
+#tablaUsuarios tbody tr:last-of-type {
+    border-bottom: 2px solid #e7e5e5;
+}
+#tablaUsuarios tbody tr:hover {
+    background-color: #9293919c;
+}
+#tablaa{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+canvas{
+    max-width: 100%;
+}

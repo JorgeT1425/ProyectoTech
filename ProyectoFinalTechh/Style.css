@@ -1,0 +1,143 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #d2efd7; /* Color suave y relajante inspirado en la naturaleza */
+}
+
+/* Encabezado */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background: #222;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+
+}
+#imglogo{
+    height: 40px;
+    border-radius: 30px;
+    
+}
+
+.navbar a {
+    padding: 20px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #61d12e;
+}
+
+/* Header */
+.header {
+    height: 100vh;
+    background: url('Imagenes/energiaeolica.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background: #27b077;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #1a874e;
+}
+
+/* Secciones */
+.content-sau, .calc, .about, .contact, .AllGra {
+    padding: 80px 20px;
+    background: #ffffff;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #a2d5c6; /* Color pastel para resaltar los cuadros de contenido */
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    background: #27b077;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+.header:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+    .navbar {
+        display: none;
+    }
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

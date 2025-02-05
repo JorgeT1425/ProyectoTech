@@ -1,0 +1,95 @@
+/* Estilo general */
+body {
+    background-color: #add4f0; 
+    font-family: 'Poppins', sans-serif;
+    color: #2C3E50;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 28px;
+    color: #1A73E8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de los filtros */
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #1A237E;
+}
+
+select, button {
+    padding: 8px 12px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #90CAF9;
+    background-color: #87b2d5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button {
+    background-color: #1E88E5;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background-color: #1565C0;
+}
+
+/* Tabla */
+#tablaUsuarios {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+#tablaUsuarios thead tr {
+    background-color: #1565C0; /* Azul fuerte */
+    color: white;
+    text-transform: uppercase;
+}
+
+#tablaUsuarios th, #tablaUsuarios td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Filas alternas */
+#tablaUsuarios tbody tr:nth-child(even) {
+    background-color: #E3F2FD; /* Azul clarito */
+}
+
+/* Hover en filas */
+#tablaUsuarios tbody tr:hover {
+    background-color: #BBDEFB; /* Azul más oscuro */
+    transition: 0.3s ease;
+}
+
+/* Última fila */
+#tablaUsuarios tbody tr:last-of-type {
+    border-bottom: 2px solid #1565C0;
+}
+
+/* Estilos para hacer la tabla más responsiva */
+@media (max-width: 768px) {
+    #tablaUsuarios {
+        width: 100%;
+    }
+    
+    select, button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

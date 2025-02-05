@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Eólica</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="#Inicio"><img src="Imagenes/logo.jpg" alt="" id="imglogo"></a>
+        </div>
+        <nav class="navbar">
+            <a href="#Inicio">Inicio</a>
+            <a href="#Nosotros">Más info</a>
+            <a href="#Contacto">Contacto</a>
+            <a href="#TablaDeValores">Tabla Historica</a>
+            <a href="#TodasLasGraficas">Gráficas</a>
+            <a href="#Calculadora">Calculadora</a>
+        </nav>
+    </div>
+
+    <header class="content header" id="Inicio">
+        <h2 class="title">Energía Eólica</h2>
+        <p>
+            La energía eólica es una fuente renovable que aprovecha la fuerza del viento para generar electricidad de manera limpia y sostenible. <br>
+            Se produce a través de aerogeneradores, también conocidos como turbinas eólicas,  <br>
+            que transforman la energía cinética del viento en energía eléctrica. 
+        </p>
+    </header>
+
+    <section class="content-sau" id="TablaDeValores">
+        <h2 class="title">Tabla Historica de datos</h2>
+        <p>Si necesita ir a la tabla con todos los países y sus valores, haga clic en el botón.</p>
+        <a href="cvs.html" class="btn" target="_blank">Ir a la tabla</a>
+    </section>
+
+    <section class="content calc" id="Calculadora">
+        <h2>Calculadora</h2>
+        <form>
+            <label for="Lacalculadora">Ingrese su consumo mensual en kw/h:</label>
+            <input type="text" id="Lacalculadora" required>
+            <button type="button" id="Elboton">Ingresar</button>
+        </form>
+        <p id="otro"></p>    
+    </section>
+
+    <section class="AllGra" id="TodasLasGraficas">
+        <h2 class="title">Gráficas</h2>
+        <a href="Graficas.html" class="btn" target="_blank">Ver</a>
+    </section>
+
+    <section class="content about" id="Nosotros">
+        <h2 class="title">Más Información</h2>
+        <p>
+            La energía eólica es una de las más eficientes y menos costosas, ya que usa un recurso inagotable.
+        </p>
+        <div class="box-container">
+            <div class="box">
+                <h3>Beneficios</h3>
+                <p>Es renovable, no contamina y reduce el uso de combustibles fósiles.</p>
+            </div>
+            <div class="box">
+                <h3>Funcionamiento</h3>
+                <p>Convierte la energía cinética del viento en electricidad mediante turbinas eólicas.</p>
+            </div>
+            <div class="box">
+                <h3>Impacto Ambiental</h3>
+                <p>Reduce el uso de combustibles fósiles y la emisión de gases contaminantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content contact" id="Contacto">
+        <h2 class="title">Contacto</h2>
+        <p>Si desea conocer más sobre energía eólica y renovables, contáctenos.</p> <br>
+        <a href="https://www.minenergia.gov.co/es/misional/fuentes-no-convencionales-de-energ%C3%ADa-renovable-fncer/" class="btn" target="_blank">Click Aqui</a>
+    </section>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>

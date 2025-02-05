@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tabla Dinámica desde CSV</title>
+    <link rel="stylesheet" href="diseñtabla.css">
+</head>
+
+<body>
+    <h1 id="tablaa">Tabla Historica de datos</h1>
+
+    <!-- Filtros -->
+    <label for="filtroPais">Filtrar por país:</label>
+    <select id="filtroPais">
+        <option value="">Todos</option>
+    </select>
+
+    <label for="filtroAno">Filtrar por año:</label>
+    <select id="filtroAno">
+        <option value="">Todos</option>
+    </select>
+
+    <button id="btnBuscar">Buscar</button>
+
+    <!-- Tabla -->
+    <table id="tablaUsuarios">
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>codigo</th>
+                <th>Año</th>
+                <th>Biomasa (twh)</th>
+                <th>Solar (twh)</th>
+                <th>Eólica (twh)</th>
+                <th>Hidroelectrica (twh)</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="cvs.js"></script>
+    <script src="graficas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+</body>
+
+</html>
